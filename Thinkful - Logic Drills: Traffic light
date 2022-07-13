@@ -3,3 +3,20 @@
 Complete the function that takes a string as an argument representing the current state of the light and returns a string representing the state the light should change to.
 
 For example, when the input is green, output should be yellow. --->
+
+
+function updateLight(current) {
+let light = ["green", "yellow", "red"]
+
+if (current === light[0] ) {
+  return light[1]
+}
+ else if (current === light[1]) {
+    return light[2]
+  }
+  
+else if (current === light[2]){
+   return light[0]
+ }
+
+}
